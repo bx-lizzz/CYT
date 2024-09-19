@@ -1,0 +1,124 @@
+body {
+    background-color: #ffe4e1;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #d45d79;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .imagen-tejidos {
+    width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+    max-width: 500px; /* Define un tamaño máximo */
+    margin: 20px auto; /* Centra la imagen con margen */
+    display: block; /* Hace que la imagen sea un bloque para centrarla */
+    border: 5px solid #d45d79; /* Añade un borde del color rosa */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+  }
+  
+  p {
+    color: #333;
+    font-size: 1.2em;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+
+  
+  .dropzone-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .dropzone {
+    background-color: #ffd1dc;
+    border: 2px dashed #d45d79;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    min-height: 200px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropzone h2 {
+    color: #d45d79;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .dropzone.hover {
+    background-color: #f7a1b0;
+  }
+  
+  .items {
+    margin-top: 30px;
+  }
+  
+  .item {
+    background-color: #fff;
+    border: 2px solid #d45d79;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    cursor: grab;
+    font-size: 1.2em;
+    color: #d45d79;
+  }
+  
+  .item:hover {
+    background-color: #fcd1d7;
+  }
+  
+  button {
+    background-color: #d45d79;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #c64a6a;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  #description, #layerDefinition {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    background-color: #fff3f4;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .dropzone-container {
+      flex-direction: column;
+    }
+  
+    .dropzone {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+  
+  
+  

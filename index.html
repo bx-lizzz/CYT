@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Tejidos Embrionarios</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tejidos Embrionarios</h1>
+    <img src="15_organogenesis.png" alt="Imagen de organogénesis" class="imagen-tejidos">
+    <p>Arrastra las partes del cuerpo humano a la capa embrionaria correspondiente. Haz clic en "Comprobar" para verificar tus respuestas.</p>
+    <div class="dropzone-container">
+      <div class="dropzone" id="endodermo" data-type="endodermo">
+        <h2>Endodermo</h2>
+      </div>
+      <div class="dropzone" id="mesodermo" data-type="mesodermo">
+        <h2>Mesodermo</h2>
+      </div>
+      <div class="dropzone" id="ectodermo" data-type="ectodermo">
+        <h2>Ectodermo</h2>
+      </div>
+    </div>
+
+    <div class="items">
+      <div class="item" draggable="true" id="higado" data-type="endodermo" data-description="El hígado forma parte del endodermo. Es responsable de muchas funciones metabólicas.">Hígado</div>
+      <div class="item" draggable="true" id="corazon" data-type="mesodermo" data-description="El corazón es un órgano clave del sistema circulatorio y se deriva del mesodermo.">Corazón</div>
+      <div class="item" draggable="true" id="piel" data-type="ectodermo" data-description="La piel es la capa externa del cuerpo humano y se forma a partir del ectodermo.">Piel</div>
+      <div class="item" draggable="true" id="pulmones" data-type="endodermo" data-description="Los pulmones son órganos respiratorios y se desarrollan a partir del endodermo.">Pulmones</div>
+      <div class="item" draggable="true" id="riñones" data-type="mesodermo" data-description="Los riñones son responsables de filtrar la sangre y se desarrollan a partir del mesodermo.">Riñones</div>
+      <div class="item" draggable="true" id="sistema_nervioso" data-type="ectodermo" data-description="El sistema nervioso incluye el cerebro y la médula espinal, derivados del ectodermo.">Sistema Nervioso</div>
+    </div>
+
+    <button id="checkButton">Comprobar</button>
+    <div id="result"></div>
+    
+    <h2>Descripción de la parte del cuerpo:</h2>
+    <div id="description"></div>
+    
+    <h2>Descripción de las capas embrionarias:</h2>
+    <div id="layerDefinition"></div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
